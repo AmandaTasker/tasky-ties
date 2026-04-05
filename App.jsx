@@ -423,13 +423,8 @@ export default function App() {
     <div className="app">
       {/* ── Header ── */}
       <div className="header">
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 4 }}>
-          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="2" y="2" width="40" height="40" rx="8" stroke="#C0533A" strokeWidth="3.5" fill="#FDF6EC"/>
-            <line x1="10" y1="13" x2="34" y2="13" stroke="#C0533A" strokeWidth="3.5" strokeLinecap="round"/>
-            <line x1="22" y1="13" x2="22" y2="30" stroke="#C0533A" strokeWidth="3.5" strokeLinecap="round"/>
-            <polyline points="11,23 18,31 35,14" stroke="#D4A843" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-          </svg>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 4 }}>
+          <img src="/logo.png" alt="Tasky Ties logo" style={{ width: 52, height: 52, objectFit: "contain" }} />
           <div className="logo">Tasky <span>Ties</span></div>
         </div>
         <div className="tagline">Family gatherings, effortlessly organized</div>
@@ -438,7 +433,7 @@ export default function App() {
       {/* ── Not signed in ── */}
       {!session && (
         <div className="card" style={{ textAlign: "center", paddingTop: 36, paddingBottom: 36 }}>
-          <div style={{ fontSize: "2rem", marginBottom: 12 }}>🍽️</div>
+          <img src="/logo.png" alt="Tasky Ties" style={{ width: 64, height: 64, objectFit: "contain", marginBottom: 12 }} />
           <div className="card-title" style={{ marginBottom: 8 }}>Welcome to Tasky Ties</div>
           <p style={{ fontSize: "0.9rem", color: COLORS.brownMid, marginBottom: 28, lineHeight: 1.6 }}>
             Sign in to create gatherings, invite family, and see everything you've signed up to bring — all in one place.
